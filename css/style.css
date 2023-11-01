@@ -4,12 +4,16 @@
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
 }
+html, body{
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
 a{
     text-decoration: none;
+    color: white;
 }
 body{
     background-color: rgb(36, 48, 52);
-    /* padding: 2rem 5rem; */
 }
 nav{
     display: flex;
@@ -19,8 +23,9 @@ nav{
     z-index: 1;
     width: 100%;
     padding: 1rem 5rem;
-    background-color: green;
+    background-color: rgb(55, 71, 76);
     height: 10%;
+    align-items: center;
 }
 .logo{
     color: rgba(14, 198, 14, 0.902);
@@ -30,30 +35,25 @@ nav{
 .logo::after{
     content: '';
     position: absolute;
-    top: 4.6rem;
+    top: 4.4rem;
     left: 5rem;
     width: 0;
     height: 2px;
     transition: 0.5s;
     background-color: green;
-    /* transform-origin: left; */
 }
 .logo:hover::after{
     width: 15%;
-    /* transform-origin: right; */
 }
 .nav_logo{
     display: flex;
     gap: 1.5rem;
+    align-items: center;
 }
 .nav_logo i{
     color: rgba(14, 198, 14, 0.902);
     font-size: 3rem;
 }
-/* .nav_links{
-    display: flex;
-    gap: 2rem;
-} */
 nav ul{
     display: flex;
     gap: 5rem;
@@ -62,6 +62,14 @@ nav li{
     margin-top: .5rem;
     list-style-type: none;
     color: white;
+    cursor: pointer;
+}
+nav li a:hover{
+    color: rgb(28, 41, 46);
+}
+.menu{
+    display: none;
+    color: rgba(14, 198, 14, 0.902);
 }
 .profile_links{
     position: fixed;
@@ -78,29 +86,24 @@ nav li{
 .profile_links i:hover{
     transform: scale(1.5);
     transition: .5s;
-    /* background-color: red; */
 }
 main{
-    margin: 10rem 5rem;
-    /* padding: 2rem 5rem; */
+    margin: 15rem 6rem 9rem 6rem;
 }
 main h4{
     width: 80%;
     color: white;
     line-height: 2;
     padding-top: 1rem;
+    font-size: .9rem;
 }
 .text{
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .text p{
     font-size: 1rem;
     margin-left: 10px;
-}
-main img{
-    width: 25%;
-    border-radius: 50%;
 }
 .green{
     display: block;
@@ -117,20 +120,12 @@ main img{
 .typing-effect{
     color: rgba(14, 198, 14, 0.902);
 }
-section h1, .project_title{
+section h1, .project_title, #contact h1{
     color: rgba(14, 198, 14, 0.902);
 }
-/* article{
-    color: white;
-    width: 50%;
-    margin: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 section{
     color: white;
-    margin: 0 5rem;
+    margin: 0 6rem;
 }
 section p a{
     color: rgba(14, 198, 14, 0.902);
@@ -140,23 +135,6 @@ section p a{
 section p a:hover{
     color: green;
 }
-/* section p a::after{
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    transform: scale(0);
-    transform-origin: right;
-    background-color: rgba(14, 198, 14, 0.902);
-    transition: .5s;
-}
-section p a:hover::after{
-    width: 100%;
-    transform: scale(1);
-    transform-origin: left;
-} */
 .projects{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -165,7 +143,6 @@ section p a:hover::after{
 }
 .projects img{
     width: 100%;
-    /* height: 100%; */
 }
 .projects img:hover{
     cursor: pointer;
@@ -197,26 +174,16 @@ section p a:hover::after{
     display:  inline-block;
     padding-right: 10px;
 }
-.hello{
-    color: white;
-    padding: .5rem 1.5rem;
-    background-color: rgba(14, 198, 14, 0.902);
-    display: inline-block;
-    border-radius: 8px;
-    position: sticky;
-    bottom: 10px;
-    z-index: -1;
-}
 button{
     all: unset;
     border-radius: 8px;
     color: white;
-    padding: .5rem 1.5rem;
+    padding: 1rem 2rem;
     background-color: rgba(14, 198, 14, 0.902);
     cursor: pointer;
     position: relative;
     z-index: 1;
-    margin: 3rem 0 0 0;
+    margin: 2.5rem 0 0 0;
 }
 button::after{
     content: '';
@@ -237,15 +204,11 @@ button:hover::after{
 }
 .card{
     color: white;
-    /* background-color: black; */
-    /* padding: 2rem; */
-    /* margin: .5rem; */
     cursor: pointer;
 }
 .title{
     padding-bottom: 1rem;
     position: relative;
-    z-index: 1;
     display: inline-block;
 }
 .title::after{
@@ -295,8 +258,7 @@ button:hover::after{
     transform: scaleY(1)
 }
 article{
-    margin: 3rem 0;
-    margin: 6rem 5rem;
+    margin: 7rem 6rem;
 }
 article p{
     color: rgba(14, 198, 14, 0.902);
@@ -309,12 +271,10 @@ article h4{
 article ul{
     display: flex;
     gap: 5rem;
-    /* text-align: center; */
 }
 article li{
     list-style-type: none;
     padding-top: 1.5rem;
-    /* font-size: 2rem; */
 }
 article i{
     display: inline-block;
@@ -324,4 +284,156 @@ article i{
 .languages{
     color: white;
     font-size: 1rem;
+}
+#contact{
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+    color: white;
+}
+#contact h1{
+    position: relative;
+}
+#contact h1::after{
+    content: '';
+    background-color: rgba(14, 198, 14, 0.902);
+    position: absolute;
+    bottom: 1px;
+    width: 15%;
+    height: 5px;
+    transition: 0.5s;
+}
+#contact h3{
+    padding-top: 1.5rem;
+    line-height: 2;
+}
+.copyright{
+    text-align: center;
+    color: white;
+    margin: 5rem 0 2rem 0;
+    font-size: 12px;
+}
+@media screen and (max-width:992px) {
+    section{
+        margin: 0 3rem;
+    }
+    .profile_links{
+        right: -2rem;
+    }
+    .projects{
+        grid-gap: 1.5rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .logo{
+        font-size: 1.7rem;
+    }
+    .nav_logo{
+        gap: 5px;
+    }
+    .nav_logo i{
+        font-size: 1.7rem;
+    }
+    nav{
+        padding: 1rem 2.5rem;
+    }
+    nav ul{
+        gap: 2rem;
+    }
+    main{
+        margin: 12rem 3rem 6rem 3rem;
+    }
+    main h4{
+        width: 95%;
+    }
+    .text{
+        font-size: 1.5rem;
+    }
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:576px) {
+    nav ul{
+        flex-direction: column;
+        position: fixed;
+        background-color: green;
+        top: 10%;
+        right: -200px;
+        height: 40vh;
+        text-align: center;
+        padding: 15px 40px;
+        transition: .7s ease-in-out;
+        box-shadow: 0 0 5px var(--DarkGrayishBlue);
+        opacity: .7;
+    }
+    .text h1{
+        font-size: 2rem;
+    }
+    .menu{
+        display: block;
+        width: 15%;
+    }
+    .check{
+        display: none;
+    }
+    .close-menu{
+        display: none;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .nav_logo{
+        gap: 5px;
+        padding-left: 2rem;
+    }
+    .nav_logo i{
+        font-size: 1.5rem;
+    }
+    nav ul{
+        gap: 1.5rem;
+    }
+    .projects{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #contact{
+        width: 80%;
+    }
+    article ul{
+        gap: 3rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    nav{
+        padding: 10px;
+    }   
+    main{
+        margin: 8rem 2rem 4rem 2rem;
+    }
+    article{
+        margin: 6rem 3rem;
+    }
+    article ul{
+        gap: 1rem;
+    }
+}
+@media screen and (max-width:375px) {
+    .logo{
+       font-size: 1rem; 
+    }
+    .nav_logo{
+        gap: .2rem;
+    }
+    .nav_logo i{
+        font-size: 1rem;
+    }
+    article{
+        margin: 6rem 1.5rem;
+    }
+    #contact{
+        width: 70%;
+    }
+    #contact h3{
+        font-size: 1rem;
+    }
 }

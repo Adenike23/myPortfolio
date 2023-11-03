@@ -6,7 +6,7 @@
 }
 html, body{
     scroll-behavior: smooth;
-    scroll-padding-top: 3.7rem;
+    scroll-padding-top: 4rem;
 }
 a{
     text-decoration: none;
@@ -70,6 +70,9 @@ nav li a:hover{
 .menu{
     display: none;
     color: rgba(14, 198, 14, 0.902);
+}
+.close-menu, .open-menu{
+    font-size: 1.5rem;
 }
 .profile_links{
     position: fixed;
@@ -372,7 +375,7 @@ article i{
     }
     .menu{
         display: block;
-        width: 15%;
+        width: 8%;
     }
     .check{
         display: none;
@@ -385,13 +388,16 @@ article i{
     }
     .nav_logo{
         gap: 5px;
-        padding-left: 2rem;
+        padding-left: .5rem;
     }
     .nav_logo i{
         font-size: 1.5rem;
     }
     nav ul{
         gap: 1.5rem;
+    }
+    button{
+        z-index: -1;
     }
     .projects{
         grid-template-columns: repeat(1, 1fr);

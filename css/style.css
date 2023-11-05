@@ -87,7 +87,8 @@ nav li a:hover{
     padding-top: 10px;
 }
 .profile_links i:hover{
-    transform: scale(1.5);
+    transform: rotate(360deg);
+    transition-duration: 12s;
     transition: .5s;
 }
 main{

@@ -10,6 +10,7 @@ let typed = new Typed(".typing-effect", {
 
   const year = new Date().getFullYear();
   document.querySelector('.date').textContent = year
+  const nav = document.querySelector('nav')
 
 const openNav = document.querySelector(".open-menu");
 const closeNav = document.querySelector(".close-menu");
@@ -31,3 +32,13 @@ document.querySelectorAll("nav ul a").forEach(navLink => {
       closeNav.style.display = "none"
   })
 })
+// let prevScroll = document.documentElement.scrollTop || document.body.scrollTop || 0;
+// window.onscroll = function(){
+//   let currentScroll = document.documentElement.scrollTop || document.body.scrollTop || 0;;
+//   if(prevScroll > currentScroll){
+//     nav.style.transform = 'translateY(0)'
+//   } else{
+//     nav.style.transform = 'translateY(-100%)';
+//   }
+//   prevScroll = currentScroll
+// }

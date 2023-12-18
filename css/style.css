@@ -128,6 +128,9 @@ main h4{
 section h1, .project_title, #contact h1{
     color: rgba(14, 198, 14, 0.902);
 }
+.project_title{
+    padding-right: 10px;
+}
 section{
     color: white;
     margin: 0 6rem;

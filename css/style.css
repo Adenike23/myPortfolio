@@ -473,16 +473,20 @@ article i{
 @media screen and (max-width:576px) {
     nav ul{
         flex-direction: column;
+        justify-content: center;
         position: fixed;
         background-color: green;
         top: 10%;
         right: -200px;
-        height: 40vh;
+        height: 100vh;
         text-align: center;
-        padding: 15px 40px;
+        padding: 15px 25px;
         transition: .7s ease-in-out;
         box-shadow: 0 0 5px var(--DarkGrayishBlue);
-        opacity: .7;
+        opacity: .8;
+    }
+    nav li{
+        margin-bottom: 4rem;
     }
     .typing-effect{
         font-size: 1.3rem;

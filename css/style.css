@@ -479,6 +479,7 @@ article i{
         top: 10%;
         right: -200px;
         height: 100vh;
+        width: 40%;;
         text-align: center;
         padding: 15px 25px;
         transition: .7s ease-in-out;

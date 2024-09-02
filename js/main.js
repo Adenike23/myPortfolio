@@ -21,13 +21,13 @@ openNav.addEventListener("click", function() {
   closeNav.style.display = "block"
 })
 closeNav.addEventListener("click", function() {
-  navList.style.right = "-200%"
+  navList.style.right = "-400%"
   openNav.style.display = "block"
   closeNav.style.display = "none"
 })
 document.querySelectorAll("nav ul a").forEach(navLink => {
   navLink.addEventListener("click", function() {
-      navList.style.right = "-200%"
+      navList.style.right = "-400%"
       openNav.style.display = "block"
       closeNav.style.display = "none"
   })

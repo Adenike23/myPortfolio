@@ -477,14 +477,14 @@ article i{
         position: fixed;
         background-color: green;
         top: 10%;
-        right: -200px;
+        right: -400px;
         height: 100vh;
-        width: 40%;;
+        width: 55%;;
         text-align: center;
         padding: 15px 25px;
         transition: .7s ease-in-out;
         box-shadow: 0 0 5px var(--DarkGrayishBlue);
-        opacity: .8;
+        opacity: 1;
     }
     nav li{
         margin-bottom: 4rem;

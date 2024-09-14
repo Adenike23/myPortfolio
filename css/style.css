@@ -305,8 +305,6 @@ article i{
 
 .experience {
     margin: 0 6rem;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
     color: green;
 }
 
@@ -568,6 +566,12 @@ article i{
     }
     article ul{
         gap: 3rem;
+    }
+    .experience{
+        margin: 0 2rem;
+    }
+    .experience-section{
+        margin: 2.5rem;
     }
 }
 @media screen and (max-width: 480px) {
